@@ -24,7 +24,7 @@ jobs:
 
       - name: Install TemplateMan CLI Client
         run: |
-          go install -v github.com/khulnasoft-labs/vulscan/cmd/tmc@dev
+          go install -v github.com/khulnasoft-labs/vulscan/v2/cmd/tmc@dev
 
       - name: Run TemplateMan
         id: tmc
