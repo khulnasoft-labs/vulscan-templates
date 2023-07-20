@@ -20,7 +20,7 @@ jobs:
           go-version: 1.20.x
 
       - name: vulscan install
-        run: go install -v github.com/khulnasoft-labs/vulscan/cmd/vulscan@latest
+        run: go install -v github.com/khulnasoft-labs/vulscan/v2/cmd/vulscan@latest
 
       - name: Template Validation
         run: |
