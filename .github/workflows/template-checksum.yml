@@ -24,7 +24,7 @@ jobs:
 
       - name: install checksum generator
         run: |
-          go install -v github.com/khulnasoft-labs/vulscan/cmd/generate-checksum@dev
+          go install -v github.com/khulnasoft-labs/vulscan/v2/cmd/generate-checksum@dev
 
       - name: generate checksum
         id: checksum
