@@ -1,0 +1,22 @@
+id: phone-extractor
+
+info:
+  name: BD Phone Extractor
+  author: devseccon
+  severity: info
+  metadata:
+    max-request: 1
+  tags: misc,phone,generic
+
+http:
+  - method: GET
+    path:
+      - "{{BaseURL}}"
+
+    extractors:
+      - type: regex
+        part: body
+        regex:
+          - "^(?:\\+?88)?01[15-9]\\d{8}$"
+
+# digest: 4a0a00473045022100d4a5bae5841068bef6286d2561e7efa52f17f3111850459bb275a78ddfbe6893022063d643678ba31a7355baa3bd6cc117ec93b397dff412b17aac78cf9d3b8d90ce:922c64590222798bb761d5b6d8e72950
